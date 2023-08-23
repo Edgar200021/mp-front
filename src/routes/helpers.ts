@@ -15,6 +15,8 @@ export const pathsPrivate: Record<string, PathsPrivate> = {
   accountSettings: PathsPrivate.ACCOUNT_SETTINGS,
 };
 
+export const paths: Record<string, string> = { ...pathsPrivate, ...pathsPublic };
+
 export const checkPathMatch = (
   pathname: string,
   allPaths: typeof pathsPublic | typeof pathsPrivate

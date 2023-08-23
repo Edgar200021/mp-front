@@ -14,7 +14,10 @@ const PublicRoutes = () => {
   return (
     <Routes>
       <Route path={pathsPublic.home} element={<HomePage />} />
-      <Route path={pathsPublic.productDetails} element={<h1>hello</h1>} />
+      <Route
+        path={pathsPublic.productDetails}
+        element={<ProductDetailsPage />}
+      />
       <Route
         path="*"
         element={isMatch ? <Navigate to={pathsPublic.home} /> : null}
